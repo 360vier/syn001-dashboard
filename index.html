@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Projektstand synava medavis</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: Zeitstrahl als Kopf, dann zwei kurze Listen, dann Ergebnisse je Phase, Scope aufklappbar */
+:root{--bg:#f7f6f2;--fg:#1c1b18;--fg2:#5c5a52;--mut:#8a887f;--line:#e2dfd6;--card:#ffffff;--acc:#0f5c8c;--now:#c2410c;
+--ph-plan:#e6e3da;--ph-aktiv:#cfe0ee;--ph-fertig:#d6ead9;--ph-fg:#2b2a26;
+--of-bg:#ecebe6;--of-fg:#6b6961;--ar-bg:#e3eef7;--ar-fg:#0f4f7a;--wa-bg:#fbeedc;--wa-fg:#8a5410;--ab-bg:#ece6f7;--ab-fg:#4f3a8a;--fe-bg:#e2f1e4;--fe-fg:#1f6b33;
+--font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161614;--fg:#ecebe6;--fg2:#b9b7ae;--mut:#85837a;--line:#2b2b28;--card:#1f1f1c;--acc:#7fb6dc;--now:#f59e6b;
+--ph-plan:#2a2a27;--ph-aktiv:#1e3a52;--ph-fertig:#1f3b25;--ph-fg:#ecebe6;
+--of-bg:#2a2a27;--of-fg:#a19f96;--ar-bg:#1b3246;--ar-fg:#9cc7e8;--wa-bg:#3d2c14;--wa-fg:#f0b865;--ab-bg:#2d2544;--ab-fg:#bfaeea;--fe-bg:#1b3421;--fe-fg:#8fd29e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161614;--fg:#ecebe6;--fg2:#b9b7ae;--mut:#85837a;--line:#2b2b28;--card:#1f1f1c;--acc:#7fb6dc;--now:#f59e6b;
+--ph-plan:#2a2a27;--ph-aktiv:#1e3a52;--ph-fertig:#1f3b25;--ph-fg:#ecebe6;
+--of-bg:#2a2a27;--of-fg:#a19f96;--ar-bg:#1b3246;--ar-fg:#9cc7e8;--wa-bg:#3d2c14;--wa-fg:#f0b865;--ab-bg:#2d2544;--ab-fg:#bfaeea;--fe-bg:#1b3421;--fe-fg:#8fd29e;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.5;padding-block:32px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:900px;margin:0 auto}
+h1{font-size:24px;font-weight:600;margin:0 0 4px;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--mut);font-size:13px;margin:0 0 20px}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:0 0 26px}
+.k{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.k small{display:block;color:var(--mut);font-size:12px;letter-spacing:.02em;text-transform:uppercase}
+.k b{display:block;font-size:22px;font-weight:600;margin:2px 0}.k span{color:var(--fg2);font-size:13px}
+h2{font-size:12px;font-weight:600;color:var(--mut);letter-spacing:.06em;text-transform:uppercase;margin:24px 0 6px}
+.tl{position:relative;height:250px;margin:8px 0 10px;overflow:hidden}
+.mon{position:absolute;left:0;right:0;top:0;height:18px;border-bottom:1px solid var(--line);font-size:11px;color:var(--mut)}
+.mon span{position:absolute;top:0;padding-left:4px;border-left:1px solid var(--line);height:18px}
+.ph{position:absolute;top:28px;height:26px;border-radius:6px;background:var(--ph-plan);color:var(--ph-fg);font-size:12px;line-height:26px;padding:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ph-aktiv{background:var(--ph-aktiv)}.ph-fertig{background:var(--ph-fertig)}
+.ph:nth-child(n+4){top:60px}.ph:nth-child(n+5){top:92px}.ph:nth-child(n+6){top:124px}.ph:nth-child(n+7){top:60px}
+.ms{position:absolute;top:156px;transform:translateX(-50%);text-align:center;font-size:11px;color:var(--fg2);width:110px;line-height:1.25}
+.ms i{display:block;width:10px;height:10px;margin:0 auto 4px;background:var(--acc);transform:rotate(45deg);border-radius:2px}
+.ms-done i{background:var(--fe-fg)}.ms-alt{top:200px}.ms-alt i{margin-bottom:4px}.ms b{font-weight:500;color:var(--mut)}
+.now{position:absolute;top:18px;bottom:96px;border-left:2px dashed var(--now)}
+.now span{position:absolute;top:-2px;left:4px;font-size:11px;color:var(--now);font-weight:500}
+.r{display:grid;grid-template-columns:minmax(0,1fr) 150px 56px;gap:12px;align-items:start;padding:9px 0;border-bottom:1px solid var(--line)}
+.r2{grid-template-columns:minmax(0,1fr) 150px}
+.t{min-width:0;font-size:14px}.nr{color:var(--mut);margin-right:8px;font-variant-numeric:tabular-nums}
+.hint{color:var(--mut);font-size:12px;margin-top:2px}
+.c{display:inline-block;font-size:12px;font-weight:500;padding:3px 10px;border-radius:999px;white-space:nowrap;justify-self:start}
+.c-offen{background:var(--of-bg);color:var(--of-fg)}.c-arbeit{background:var(--ar-bg);color:var(--ar-fg)}.c-wartet{background:var(--wa-bg);color:var(--wa-fg)}.c-abnahme{background:var(--ab-bg);color:var(--ab-fg)}.c-fertig{background:var(--fe-bg);color:var(--fe-fg)}
+.d{text-align:right;font-variant-numeric:tabular-nums;color:var(--fg2);font-size:14px}
+ul{list-style:none;margin:0;padding:0}li{display:flex;gap:14px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+li span:first-child{color:var(--mut);min-width:96px;font-size:13px;flex:none}
+.muted{color:var(--mut)}
+details{margin-top:18px;border-top:1px solid var(--line)}summary{cursor:pointer;padding:12px 0;font-size:14px;font-weight:500;color:var(--acc)}
+.foot{color:var(--mut);font-size:12px;margin-top:28px}
+.sec{margin-top:28px}.sec h2{font-size:13px;margin:0 0 4px}.sec .lsub{margin-bottom:10px}
+.fq{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.fq div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}.fq b{display:block;font-size:15px;font-weight:600;margin-bottom:6px}.fq ul li{border:0;padding:4px 0;font-size:14px;color:var(--fg2)}.fq ul li:before{content:"?";color:var(--acc);font-weight:600;margin-right:8px}
+.mt{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}.mt .row{display:grid;grid-template-columns:1.1fr .8fr 1.8fr 1.2fr;gap:14px;padding:11px 16px;border-top:1px solid var(--line);font-size:14px}.mt .row:first-child{border-top:0;font-size:11px;font-weight:600;color:var(--mut);letter-spacing:.05em;text-transform:uppercase}.mt .row b{font-weight:600}.mt .w{color:var(--acc)}
+.ep{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}.ep .row{display:grid;grid-template-columns:28px minmax(0,1fr) 140px;gap:12px;align-items:center;padding:10px 16px;border-top:1px solid var(--line)}.ep .row:first-child{border-top:0}.ep .gh{background:var(--bg);font-size:12px;font-weight:600;color:var(--acc);padding:8px 16px}.ep .n{color:var(--mut);font-variant-numeric:tabular-nums}.ep .t b{display:block;font-size:15px;font-weight:600}.ep .t span{color:var(--mut);font-size:13px}
+@media (max-width:700px){.mt .row{grid-template-columns:1fr}.mt .row:first-child{display:none}.ep .row{grid-template-columns:24px 1fr}.ep .row .c{grid-column:2}}
+.li3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}.li3 div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.li3 b{display:block;font-size:15px;font-weight:600;margin-bottom:4px}.li3 span{color:var(--fg2);font-size:14px}
+.lsub{color:var(--fg2);font-size:14px;margin:0 0 4px}.bl{font-size:13px;font-weight:600;color:var(--acc);margin:18px 0 8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.cd{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.cd .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.cd h3{margin:0;font-size:16px;font-weight:600}.cd h3 i{font-style:normal;color:var(--mut);margin-right:8px;font-variant-numeric:tabular-nums}
+.cd .lst{color:var(--mut);font-size:13px}.cd .sk{font-size:14px;color:var(--fg2)}.cd .kl{font-size:14px;border-left:3px solid var(--acc);padding:2px 0 2px 10px}.cd .kl small{display:block;color:var(--acc);font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.cd .meta{display:flex;gap:8px;align-items:center;flex:none}.cd .meta .d{font-size:13px}
+.ag{border:1px solid var(--line);border-radius:10px;padding:2px 16px;margin-top:8px}.ag li:last-child{border-bottom:0}.ag li span:first-child{min-width:20px;font-weight:600;color:var(--acc)}.ag b{font-weight:600}
+@media (max-width:640px){.r{grid-template-columns:1fr auto}.d{grid-column:1/-1;text-align:left}.ms{width:80px}.tl{height:290px}.ms-alt{top:220px}}
+</style>
+<main>
+<h1>Website-Plattform synava und medavis</h1>
+<p class="sub">Ideation · Angebot 2026-1020-SYNAVA-02 · 360VIER · Stand 18.11.2026</p>
+<section class="sec"><h2>Unsere Fragen an euch</h2><p class="lsub">Damit wir je Ergebnis festlegen können, wann es fertig ist.</p><div class="fq"><div><b>Zugänge und Unterlagen</b><ul><li>Zugänge zu Analytics, Search Console und dem WordPress-Backend von medavis</li><li>CI-Unterlagen von medavis für das Mood Design</li><li>Vorhandene SEO-Daten oder Briefings</li></ul></div><div><b>Ansprechpersonen</b><ul><li>Wer ist bei euch für SEO, IT und Domains sowie Inhalte zuständig?</li><li>Wer entscheidet und gibt frei, und wie technisch soll die Vorlage für eure Geschäftsführung sein?</li><li>Kanal für die Zusammenarbeit: Slack?</li></ul></div><div><b>Umfang der Ergebnisse</b><ul><li>Bestandsliste: Welche Angaben braucht sie je Auftritt?</li><li>Rollen und Sprachen: Welche Rechte haben die fünf Rollen, welche Sprachen braucht jede Gesellschaft?</li><li>Konsolidierungsliste: Was umfassen die rund 400 Backend-Seiten, und wer sichtet bei euch?</li><li>Sitemap: medavis.de und medavis.com samt Schweiz?</li><li>SEO- und GEO-Konzept: Wie tief soll es gehen?</li><li>Prototyp: Welche Seitentypen zählen für den ersten GoLive?</li></ul></div></div></section><section class="sec"><h2>Termine und Lieferungen laut Angebot</h2><p class="lsub">Zum Abgleich mit euren Terminwünschen.</p><div class="mt"><div class="row"><span>Meilenstein</span><span>Laut Angebot</span><span>Ergebnisse</span><span>Euer Wunsch (Fragebogen 03.11.)</span></div><div class="row"><b>Kick-off und Bestandsaufnahme</b><span>November</span><span>Zielbild, Bestandsliste der neun Auftritte, Konsolidierungsliste medavis</span><span class="w">–</span></div><div class="row"><b>Konzepte</b><span>November bis Dezember</span><span>Architektur-, Sicherheits-, Rollen- und Sprachkonzept, Sitemap und Concept Cards medavis, Mood Design</span><span class="w">Übergabe Konzept und Mood Design am 11.12.</span></div><div class="row"><b>Abnahme der Konzeption</b><span>Mitte Dezember</span><span>Technische Blaupause für das Fundament, Staging bereit</span><span class="w">Freigabe Geschäftsführung in KW 51</span></div><div class="row"><b>Screendesign und Prototyp</b><span>Dezember bis Januar</span><span>Klickbarer Prototyp aller Seitentypen</span><span class="w">Freigabe in KW 3 2027</span></div></div></section><section class="sec"><h2>Die neun Ergebnisse aus dem Angebot</h2><p class="lsub">So haben wir das Angebot in unserer Planung abgebildet.</p><div class="ep"><div class="gh">Plattform</div><div class="row"><span class="n">1</span><div class="t"><b>Zielbild und Bestandsliste</b><span>Kick-off und Bestandsaufnahme: Ideation Circle, Analyse der neun Auftritte</span></div><span class="c c-arbeit">in Arbeit</span></div><div class="row"><span class="n">2</span><div class="t"><b>Technische Blaupause</b><span>Architektur, Sicherheit, Datenschutz, Consent, Plugin-Regeln</span></div><span class="c c-arbeit">in Arbeit</span></div><div class="row"><span class="n">3</span><div class="t"><b>Rollen- und Sprachkonzept</b><span>Fünf Rollen, Single Sign-on, Sprachen und URL-Struktur, Medien</span></div><span class="c c-offen">offen</span></div><div class="gh">medavis · Konzeption</div><div class="row"><span class="n">4</span><div class="t"><b>Konsolidierungsliste</b><span>Bestandssichtung der rund 400 Backend-Seiten nach festen Kriterien</span></div><span class="c c-wartet">wartet auf euch</span></div><div class="row"><span class="n">5</span><div class="t"><b>Sitemap als Mind-Map</b><span>Informationsarchitektur: Einstiege, Seitentypen, Taxonomien, Schweiz</span></div><span class="c c-offen">offen</span></div><div class="row"><span class="n">6</span><div class="t"><b>Concept Cards je Seitentyp</b><span>Seitentypen mit Wireframes, SEO- und GEO-Konzept</span></div><span class="c c-offen">offen</span></div><div class="gh">medavis · Design</div><div class="row"><span class="n">7</span><div class="t"><b>Freigegebenes Mood Design</b><span>Mood Design auf Basis des medavis-CI, Design-Tokens</span></div><span class="c c-offen">offen</span></div><div class="row"><span class="n">8</span><div class="t"><b>Klickbarer Prototyp</b><span>Screendesign aller Seitentypen, barrierefrei</span></div><span class="c c-offen">offen</span></div><div class="gh">Technische Vorbereitung</div><div class="row"><span class="n">9</span><div class="t"><b>Staging bereit</b><span>Repository, Pipelines und Staging-Umgebung medavis</span></div><span class="c c-arbeit">in Arbeit</span></div></div></section>
+<p class="foot">Ansprechpartner: Kevin Owusu, 360VIER.</p>
+</main>
+</html>
