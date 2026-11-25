@@ -1,0 +1,328 @@
+{
+ "seit": "2026-11-18",
+ "jour_fixe": {
+  "erster": "2026-11-18",
+  "zeit": "11:00",
+  "titel": "Jour fixe"
+ },
+ "themen": [
+  {
+   "id": "orga",
+   "titel": "Zusammenarbeit und Vertrag",
+   "epics": [],
+   "stichworte": [
+    "Geschäftsführung"
+   ],
+   "stand": "Auftragsverarbeitung unterschrieben, Zugänge stehen, Aufgaben laufen über ClickUp, Jour fixe jeden Mittwoch um 11 Uhr.",
+   "naechstes": [
+    {
+     "wer": "uns",
+     "text": "Kurze Management Summary mit Empfehlung für eure Geschäftsführung"
+    }
+   ]
+  },
+  {
+   "id": "zielbild",
+   "titel": "Zielbild und Workshop",
+   "epics": [
+    1
+   ],
+   "stichworte": [
+    "Miro",
+    "Workshop"
+   ],
+   "stand": "Workshop am 10.11. gelaufen, die Ergebnisdokumentation liegt seit 17.11. bei euch im Miro-Board."
+  },
+  {
+   "id": "inhalte",
+   "titel": "Inhalte und Konsolidierung",
+   "epics": [
+    4
+   ],
+   "stichworte": [
+    "Excel",
+    "Tone of Voice"
+   ],
+   "stand": "Ihr sortiert den Bestand aus Content-Sicht: behalten, zusammenführen oder streichen. Daraus entsteht die Konsolidierungsliste."
+  },
+  {
+   "id": "sitemap",
+   "titel": "Sitemap, Navigation und Seitentypen",
+   "epics": [
+    5
+   ],
+   "stichworte": [],
+   "stand": "Sitemap v1 mit 85 Seiten und Navigationsmodell liegen seit 19.11. bei euch zur Abnahme, acht Seitentypen sind festgelegt.",
+   "naechstes": [
+    {
+     "wer": "gemeinsam",
+     "text": "Welche Seitentypen gehören zum ersten Go-live?"
+    }
+   ]
+  },
+  {
+   "id": "design",
+   "titel": "Design",
+   "epics": [
+    7,
+    8
+   ],
+   "stichworte": [],
+   "stand": "Euer Styleguide ist da, das Designsystem ist seit 23.11. in Arbeit. Als Nächstes folgen Gestaltungsrichtungen für das Mood Design."
+  },
+  {
+   "id": "technik",
+   "titel": "Technik und Plattform",
+   "epics": [
+    2,
+    3,
+    9
+   ],
+   "stichworte": [
+    "IT",
+    "Hosting"
+   ],
+   "stand": "Wir bereiten die Fragen an eure IT vor und setzen die Arbeitsumgebung auf. Hosting und Betreuung von synava, radiance365 und Bannwaldradiologie übernehmen wir gern, dafür brauchen wir noch ein paar Infos von euch."
+  },
+  {
+   "id": "seo",
+   "titel": "SEO und Sichtbarkeit in KI-Suchen",
+   "epics": [
+    6
+   ],
+   "stichworte": [],
+   "stand": "Ausgangslage am 24.11. mit eurem Online-Marketing besprochen. Wir starten mit der deutschen Seite, Leitfrage ist die Trennung von Fachpublikum und Patienten.",
+   "naechstes": [
+    {
+     "wer": "euch",
+     "text": "Wettbewerberliste und euren Leitfaden für Inhalte schicken"
+    },
+    {
+     "wer": "uns",
+     "text": "Schlanken Vorschlag für das Arbeitspaket SEO und KI-Sichtbarkeit machen"
+    }
+   ]
+  }
+ ],
+ "ereignisse": [
+  {
+   "datum": "2026-10-15",
+   "typ": "termin",
+   "thema": "orga",
+   "text": "Kennenlernen der Teams."
+  },
+  {
+   "datum": "2026-10-18",
+   "typ": "mail",
+   "thema": "orga",
+   "text": "Eure Entscheidung für die Zusammenarbeit mit uns, unsere Antwort.",
+   "mail": "Mailverlauf „Unsere Entscheidung zur Website-Plattform“"
+  },
+  {
+   "datum": "2026-10-27",
+   "typ": "mail",
+   "thema": "orga",
+   "text": "Euren Fragebogen ausgefüllt zurück, dazu der Entwurf zur Auftragsverarbeitung mit den technischen Maßnahmen.",
+   "mail": "gleicher Mailverlauf"
+  },
+  {
+   "datum": "2026-11-03",
+   "typ": "mail",
+   "thema": "zielbild",
+   "text": "Workshop am 10.11. bestätigt, unser Fragebogen für die Detailfragen an euch, Rückfragen zur Agenda geklärt.",
+   "mail": "Mailverlauf „Workshop am 10.11. & Projektteam“"
+  },
+  {
+   "datum": "2026-11-06",
+   "typ": "mail",
+   "thema": "zielbild",
+   "text": "Raum, Material und Ablauf für den Workshop abgestimmt.",
+   "mail": "gleicher Mailverlauf"
+  },
+  {
+   "datum": "2026-11-10",
+   "typ": "termin",
+   "thema": "zielbild",
+   "text": "Workshop bei euch vor Ort: Zielbild, Zielgruppen und Plattform."
+  },
+  {
+   "datum": "2026-11-17",
+   "typ": "mail",
+   "thema": "zielbild",
+   "text": "Ergebnisdokumentation des Workshops an euch, Feedback läuft über das Miro-Board.",
+   "mail": "Mail „Ergebnisdokumentation Workshop vom 10.11.“",
+   "link": "https://miro.com/app/board/uXjVER3wrrM=/",
+   "link_text": "Miro-Board"
+  },
+  {
+   "datum": "2026-11-18",
+   "typ": "termin",
+   "thema": "orga",
+   "text": "Jour fixe 1: Feedback über Miro, Arbeit über ClickUp, Management Summary für eure Geschäftsführung, eigener Termin zu SEO.",
+   "link": "https://app.clickup.com/2468338/docs/2bafj-349055/2bafj-1008015",
+   "link_text": "Protokoll"
+  },
+  {
+   "datum": "2026-11-18",
+   "typ": "termin",
+   "thema": "inhalte",
+   "text": "Im Jour fixe vereinbart: ihr sortiert den Bestand per Excel aus Content-Sicht und klärt Tone of Voice und Schreibstandard.",
+   "link": "https://app.clickup.com/2468338/docs/2bafj-349055/2bafj-1008015",
+   "link_text": "Protokoll"
+  },
+  {
+   "datum": "2026-11-18",
+   "typ": "mail",
+   "thema": "orga",
+   "text": "Auftragsverarbeitung freigegeben und beidseitig unterschrieben, für die ganze Gruppe.",
+   "mail": "Mailverlauf „Unsere Entscheidung zur Website-Plattform“"
+  },
+  {
+   "datum": "2026-11-18",
+   "typ": "mail",
+   "thema": "design",
+   "text": "Styleguide medavis v02 von euch erhalten.",
+   "mail": "Mail „medavis Styleguide“"
+  },
+  {
+   "datum": "2026-11-18",
+   "typ": "mail",
+   "thema": "sitemap",
+   "text": "Sitemap, Miro-Board und gemeinsame Ablage für euch freigegeben, eure Bestätigung am 19.11.",
+   "mail": "Mailverlauf „Zugänge zur gemeinsamen Arbeit“"
+  },
+  {
+   "datum": "2026-11-19",
+   "typ": "mail",
+   "thema": "orga",
+   "text": "Zugänge zu Search Console, Analytics und WordPress funktionieren. Danke!"
+  },
+  {
+   "datum": "2026-11-19",
+   "typ": "mail",
+   "thema": "orga",
+   "text": "ClickUp für euch eingerichtet: Stand, Protokolle, eure Aufgaben.",
+   "mail": "Mail „Euer Zugang zu ClickUp“",
+   "link": "https://app.clickup.com/2468338/docs/2bafj-349055/2bafj-1007955",
+   "link_text": "Aktueller Stand"
+  },
+  {
+   "datum": "2026-11-19",
+   "typ": "ticket",
+   "thema": "orga",
+   "text": "Fünf Aufgaben aus dem Jour fixe für euch in ClickUp angelegt.",
+   "link": "https://app.clickup.com/2468338/v/l/li/1201260000004980",
+   "link_text": "Eure Aufgaben"
+  },
+  {
+   "datum": "2026-11-19",
+   "typ": "ticket",
+   "thema": "sitemap",
+   "text": "Sitemap v1 medavis.de: 85 Seiten, liegt zur Abnahme bei euch.",
+   "link": "https://claude.ai/artifact/WJV7kh3nezGCwp5FiBL9jg",
+   "link_text": "Sitemap ansehen",
+   "ticket": "124h8htf60f"
+  },
+  {
+   "datum": "2026-11-19",
+   "typ": "ticket",
+   "thema": "sitemap",
+   "text": "Navigationsmodell: jede Seite mit ihrem Platz, einige bewusst außerhalb des Menüs für Google und KI.",
+   "ticket": "124h8htf60e"
+  },
+  {
+   "datum": "2026-11-19",
+   "typ": "ticket",
+   "thema": "sitemap",
+   "text": "Acht Seitentypen festgelegt, Klickpfad für den Prototyp vorgeschlagen.",
+   "ticket": "124h8htf60j"
+  },
+  {
+   "datum": "2026-11-20",
+   "typ": "mail",
+   "thema": "technik",
+   "text": "Eure Anfrage zu Hosting und Betreuung von synava, radiance365 und Bannwaldradiologie: Wir übernehmen das gern, zum Start von medavis oder auf Wunsch früher.",
+   "mail": "Mailverlauf „Betreuung/Hosting weitere Seiten?“"
+  },
+  {
+   "datum": "2026-11-23",
+   "typ": "ticket",
+   "thema": "design",
+   "text": "Designsystem begonnen, auf Basis eures Styleguides.",
+   "ticket": "124h8htf60t"
+  },
+  {
+   "datum": "2026-11-24",
+   "typ": "termin",
+   "thema": "seo",
+   "text": "Abstimmung SEO mit eurem Online-Marketing: Ausgangslage, Ziele und vorhandene Daten."
+  },
+  {
+   "datum": "2026-11-25",
+   "typ": "ticket",
+   "thema": "technik",
+   "text": "Aufgabe für euch angelegt: Kündigungstermine, Domains und Zugriff auf den Quellcode der drei Seiten.",
+   "ticket": "124h8htg0pf"
+  }
+ ],
+ "termine": [
+  {
+   "datum": "",
+   "wann": "Dezember",
+   "text": "Termin mit eurer Geschäftsführung, Datum offen",
+   "wer": "euch"
+  },
+  {
+   "datum": "2026-12-11",
+   "wann": "11.12.",
+   "text": "Übergabe Konzept und Mood Design (euer Wunsch)"
+  },
+  {
+   "datum": "2026-12-14",
+   "wann": "KW 51",
+   "text": "Freigabe durch eure Geschäftsführung (euer Wunsch)"
+  }
+ ],
+ "links": [
+  {
+   "gruppe": "Zusammenarbeit in ClickUp",
+   "titel": "Aktueller Stand",
+   "link": "https://app.clickup.com/2468338/docs/2bafj-349055/2bafj-1007955"
+  },
+  {
+   "gruppe": "Zusammenarbeit in ClickUp",
+   "titel": "Protokolle",
+   "link": "https://app.clickup.com/2468338/docs/2bafj-349055/2bafj-1007975"
+  },
+  {
+   "gruppe": "Zusammenarbeit in ClickUp",
+   "titel": "Links und Kontakte",
+   "link": "https://app.clickup.com/2468338/docs/2bafj-349055/2bafj-1007995"
+  },
+  {
+   "gruppe": "Zusammenarbeit in ClickUp",
+   "titel": "Eure Aufgaben",
+   "link": "https://app.clickup.com/2468338/v/l/li/1201260000004980"
+  },
+  {
+   "gruppe": "Arbeitsergebnisse",
+   "titel": "Sitemap v1 medavis.de",
+   "link": "https://claude.ai/artifact/WJV7kh3nezGCwp5FiBL9jg"
+  },
+  {
+   "gruppe": "Arbeitsergebnisse",
+   "titel": "Miro-Board: Konzept und Feedback zur Workshop-Dokumentation",
+   "link": "https://miro.com/app/board/uXjVER3wrrM=/"
+  },
+  {
+   "gruppe": "Ablage",
+   "titel": "Gemeinsame Drive-Ablage (Workshop-Dokumentation, Brand-Unterlagen)",
+   "link": "https://drive.google.com/drive/folders/1oIJgoHAzhmdDz-Ji38i6oZuAsELhENkg"
+  },
+  {
+   "gruppe": "Ablage",
+   "titel": "Upload-Ordner für eure Brand-Dateien",
+   "link": "https://drive.google.com/drive/folders/1780WsL_C5icN3zxfBjO0R2ac1OpOh8mO"
+  }
+ ]
+}

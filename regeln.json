@@ -1,0 +1,463 @@
+{
+ "titel": "Website-Plattform synava und medavis",
+ "untertitel": "Ideation · Angebot 2026-1020-SYNAVA-02 · 360VIER",
+ "listen_epics": [
+  "1201260000004747",
+  "1201260000004745",
+  "1201260000004746"
+ ],
+ "liste_decision_log": "1201260000004425",
+ "epic_typ_id": 1002,
+ "bloecke": [
+  {
+   "name": "Plattform",
+   "nr": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "name": "medavis · Konzeption",
+   "nr": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "name": "medavis · Design",
+   "nr": [
+    7,
+    8
+   ]
+  },
+  {
+   "name": "Technische Vorbereitung",
+   "nr": [
+    9
+   ]
+  }
+ ],
+ "ergebnis": {
+  "1": "Zielbild und Bestandsliste der neun Auftritte",
+  "2": "Technische Blaupause mit Architekturentscheidung",
+  "3": "Rollen- und Sprachkonzept",
+  "4": "Konsolidierungsliste der rund 400 Seiten",
+  "5": "Sitemap als Mind-Map, mit SEO-Gegencheck",
+  "6": "Wireframes je Seitentyp, SEO- und GEO-Konzept",
+  "7": "Freigegebenes Mood Design und Design-Tokens",
+  "8": "Klickbarer Prototyp aller Seitentypen",
+  "9": "Staging-Umgebung medavis bereit"
+ },
+ "hinweis": {
+  "1": "Workshop am 10.11. in Karlsruhe durchgeführt, Protokoll liegt vor.",
+  "2": "Die Architekturfrage verbundene Einzelseiten oder Multisite entscheiden wir gemeinsam nach unserer Empfehlung.",
+  "4": "Wartet auf den WordPress-Zugang zu medavis.de.",
+  "6": "Lösungsseite RIS entsteht als erste Vorlage."
+ },
+ "wartet_auf_kunde": {
+  "4": "Excel „behalten, zusammenführen, streichen“ aus Content-Sicht"
+ },
+ "status_text": {
+  "offen": [
+   "open",
+   "pre-backlog",
+   "backlog",
+   "to do",
+   "infos missing",
+   "internal q&a"
+  ],
+  "in Arbeit": [
+   "doing",
+   "blocked",
+   "acceptance internal",
+   "deployment"
+  ],
+  "zur Abnahme bei euch": [
+   "acceptance client"
+  ],
+  "abgenommen": [
+   "done"
+  ]
+ },
+ "termine": [
+  {
+   "datum": "18.11.",
+   "text": "Jour fixe, 11:00 Uhr, danach wöchentlich mittwochs"
+  },
+  {
+   "datum": "27.11.",
+   "text": "Bestandsliste und Konsolidierungsliste"
+  },
+  {
+   "datum": "10./11.12.",
+   "text": "Übergabe Sitemap, Konzepte und Mood Design"
+  },
+  {
+   "datum": "KW 51",
+   "text": "Freigabe durch die Geschäftsführung medavis"
+  },
+  {
+   "datum": "15.01.",
+   "text": "Übergabe Screendesign und Prototyp, Freigabe KW 3"
+  }
+ ],
+ "mitwirkung": [
+  {
+   "wann": "seit 03.11.",
+   "text": "WordPress-Zugang zu medavis.de für die Bestandssichtung"
+  },
+  {
+   "wann": "ab 18.11.",
+   "text": "Zugänge zu Analytics und Search Console, CI-Unterlagen von medavis für das Mood Design"
+  },
+  {
+   "wann": "bis 18.11.",
+   "text": "Bestätigung der Termine: Übergabe 10./11.12., Freigabe Geschäftsführung KW 51, Prototyp KW 3"
+  },
+  {
+   "wann": "offen",
+   "text": "IT-Ansprechperson für Domains und DNS"
+  },
+  {
+   "wann": "offen",
+   "text": "Hauptdomain .de oder .com"
+  },
+  {
+   "wann": "nach Empfehlung",
+   "text": "Entscheidung verbundene Einzelseiten oder Multisite"
+  }
+ ],
+ "entscheidungen_status_sichtbar": [
+  "bestätigt"
+ ],
+ "entscheidungen_fallback": "Die Entscheidungen aus Workshop und Fragebogen bestätigen wir gemeinsam im Jour fixe am 18.11. Danach erscheinen sie hier.",
+ "zeitstrahl": {
+  "start": "2026-11-02",
+  "ende": "2027-01-30",
+  "phasen": [
+   {
+    "name": "Kick-off und Bestand",
+    "von": "2026-11-02",
+    "bis": "2026-11-27",
+    "epics": [
+     1,
+     4
+    ]
+   },
+   {
+    "name": "Konzepte und Sitemap",
+    "von": "2026-11-17",
+    "bis": "2026-12-11",
+    "epics": [
+     2,
+     3,
+     5,
+     6
+    ]
+   },
+   {
+    "name": "Mood Design",
+    "von": "2026-11-24",
+    "bis": "2026-12-11",
+    "epics": [
+     7
+    ]
+   },
+   {
+    "name": "Staging",
+    "von": "2026-11-24",
+    "bis": "2026-12-09",
+    "epics": [
+     9
+    ]
+   },
+   {
+    "name": "Screendesign und Prototyp",
+    "von": "2026-12-14",
+    "bis": "2027-01-22",
+    "epics": [
+     8
+    ]
+   }
+  ],
+  "meilensteine": [
+   {
+    "datum": "2026-11-10",
+    "text": "Workshop in Karlsruhe",
+    "erledigt": true
+   },
+   {
+    "datum": "2026-11-18",
+    "text": "Erster Jour fixe"
+   },
+   {
+    "datum": "2026-11-27",
+    "text": "Bestandsliste und Konsolidierungsliste"
+   },
+   {
+    "datum": "2026-12-11",
+    "text": "Übergabe Konzept und Mood Design"
+   },
+   {
+    "datum": "2026-12-18",
+    "text": "Freigabe Geschäftsführung"
+   },
+   {
+    "datum": "2027-01-15",
+    "text": "Übergabe Prototyp"
+   },
+   {
+    "datum": "2027-01-22",
+    "text": "Freigabe Prototyp, Ende Ideation"
+   }
+  ]
+ },
+ "naechste_schritte": [
+  {
+   "datum": "18.11.",
+   "text": "Jour fixe: Termine bestätigen, Zugänge klären, Architekturweg vorstellen"
+  },
+  {
+   "datum": "bis 27.11.",
+   "text": "Zielbild und Bestandsliste der neun Auftritte an Sie"
+  },
+  {
+   "datum": "ab 24.11.",
+   "text": "Sitemap-Entwurf und zwei Gestaltungsrichtungen für das Mood Design"
+  },
+  {
+   "datum": "bis 11.12.",
+   "text": "Übergabe Konzeptpaket: Sitemap, Wireframes, Mood Design, technische Blaupause als begründete Empfehlung"
+  }
+ ],
+ "scope": {
+  "1": "Ideation Circle und Analyse der neun Auftritte. Fertig, wenn Zielbild und Bestandsliste vorliegen und von Ihnen bestätigt sind.",
+  "2": "Architektur, Sicherheit, Datenschutz, Consent, Plugin-Regeln. Fertig, wenn die technische Blaupause mit Architekturentscheidung vorliegt.",
+  "3": "Fünf Rollen, Login und Single Sign-on, Sprachen und URL-Struktur, Medien. Fertig, wenn das Rollen- und Sprachkonzept bestätigt ist.",
+  "4": "Sichtung der rund 400 Backend-Seiten nach festen Kriterien. Fertig, wenn jede Seite eine Entscheidung hat und Sie die Liste gesichtet haben.",
+  "5": "Einstiege, Seitentypen, Taxonomien, Schweiz. Fertig, wenn die Sitemap als Mind-Map inklusive SEO-Gegencheck bestätigt ist.",
+  "6": "Wireframes je Seitentyp, SEO- und GEO-Konzept. Fertig, wenn das Paket je Seitentyp bestätigt ist.",
+  "7": "Mood Design auf Basis des medavis-CI, Design-Tokens. Fertig mit der schriftlichen Freigabe der Geschäftsführung.",
+  "8": "Screendesign aller Seitentypen und klickbarer Prototyp, barrierefrei. Fertig mit Ihrer Freigabe in KW 3 und Übergabe an die Umsetzung.",
+  "9": "Repository, Pipelines, Staging-Umgebung medavis. Fertig, wenn Staging erreichbar ist und Sie den Zugang haben."
+ },
+ "agenda": {
+  "datum": "2026-11-18",
+  "titel": "Agenda Jour fixe 18.11.",
+  "punkte": [
+   {
+    "t": "Stand seit dem Workshop",
+    "h": "Die Zusammenfassung des Workshops ist gestern an Sie gegangen. Wir zeigen erste Arbeitsstände zu Sitemap und Seitentypen."
+   },
+   {
+    "t": "Lieferumfang bis 10./11.12. abgleichen",
+    "h": "Haben wir Ihren Fragebogen vom 03.11. richtig verstanden? Sitemap, Wireframes und Concept Cards, Mood Design, technische Blaupause, Rollen- und Sprachkonzept, SEO- und GEO-Konzept."
+   },
+   {
+    "t": "Technische Blaupause zum 11.12.",
+    "h": "Unser Vorschlag: eine begründete Empfehlung zur Architektur mit den offenen Punkten zum 11.12., die Vertiefung gemeinsam mit Ihrer IT im Januar."
+   },
+   {
+    "t": "Unser Vorgehen je Ergebnis",
+    "h": "Für jedes Ergebnis legen wir fest, wann es fertig ist, und planen die Schritte dahin. Damit kommen wir in den nächsten Jour fixes auf Sie zu, mit dem, was wir jeweils von Ihnen brauchen."
+   },
+   {
+    "t": "Was wir von Ihnen brauchen",
+    "h": "Zugänge zu Analytics, Search Console und den WordPress-Backends (zuerst medavis), CI-Unterlagen von medavis, vorhandene SEO-Daten. Dazu drei Fragen: Was ist mit den rund 400 Backend-Seiten gemeint? Welche fünf Rollen mit welchen Rechten? Wie technisch soll die Vorlage für eure Geschäftsführung sein?"
+   },
+   {
+    "t": "Ansprechpersonen und Zusammenarbeit",
+    "h": "Wer ist bei euch für SEO, IT und Inhalte zuständig, auch Dominiks Rolle beim Thema SEO? Kanal für die Abstimmung, unser Vorschlag ist Slack. Jour fixe mittwochs 11:00 Uhr."
+   }
+  ]
+ },
+ "leitidee": {
+  "titel": "Die Idee hinter der Plattform",
+  "quelle": "aus der Projektskizze vom 23.09.2026",
+  "punkte": [
+   {
+    "t": "Zentral verwalten, dezentral auftreten",
+    "h": "Eine Codebasis, ein Login, ein Baukasten. Nach außen behält jede Gesellschaft ihre Marke."
+   },
+   {
+    "t": "Aufnahmefähig bleiben",
+    "h": "Sprachen, Domains und Gesellschaften kommen ohne Umbau dazu, auch in einigen Jahren."
+   },
+   {
+    "t": "medavis als Blueprint",
+    "h": "Die größte und komplexeste Seite zuerst. Was hier entsteht, nutzt jeder weitere Auftritt."
+   }
+  ]
+ },
+ "leistung": {
+  "titel": "Was wir gemeinsam erarbeiten",
+  "sub": "Die neun Ergebnisse aus dem Angebot, der Lösungsweg aus der Projektskizze und was wir je Ergebnis mit Ihnen klären, damit klar ist, wann es fertig ist.",
+  "bloecke": [
+   [
+    "Plattform",
+    [
+     1,
+     2,
+     3
+    ]
+   ],
+   [
+    "medavis · Konzeption",
+    [
+     4,
+     5,
+     6
+    ]
+   ],
+   [
+    "medavis · Design",
+    [
+     7,
+     8
+    ]
+   ],
+   [
+    "Technische Vorbereitung",
+    [
+     9
+    ]
+   ]
+  ],
+  "pos": {
+   "1": {
+    "e": "Zielbild und Bestandsliste",
+    "l": "Kick-off und Bestandsaufnahme: Ideation Circle, Analyse der neun Auftritte",
+    "s": "Neun Auftritte von sieben Gesellschaften ziehen auf eine gemeinsame Basis, medavis zuerst.",
+    "k": "Welche Angaben je Auftritt braucht die Bestandsliste, und wer bestätigt das Zielbild?"
+   },
+   "2": {
+    "e": "Technische Blaupause",
+    "l": "Architektur, Sicherheit, Datenschutz, Consent, Plugin-Regeln",
+    "s": "Verbundene Einzelseiten statt Multisite: gemeinsame Codebasis, ein Login, jeder Auftritt einzeln steuerbar.",
+    "k": "Welche Tiefe braucht die Blaupause für die Freigabe durch Ihre Geschäftsführung?"
+   },
+   "3": {
+    "e": "Rollen- und Sprachkonzept",
+    "l": "Fünf Rollen, Single Sign-on, Sprachen und URL-Struktur, Medien",
+    "s": "Ein Login über alle Auftritte, Mehrsprachigkeit mit WPML, zentrale und lokale Mediathek.",
+    "k": "Welche Rechte haben die fünf Rollen, und welche Sprachen braucht jede Gesellschaft?"
+   },
+   "4": {
+    "e": "Konsolidierungsliste",
+    "l": "Bestandssichtung der rund 400 Backend-Seiten nach festen Kriterien",
+    "s": "Weniger Seiten, bessere Führung. Wir liefern die Kriterien, Ihr Team sichtet den Bestand.",
+    "k": "Was umfassen die 400 Backend-Seiten, und wer sichtet bei euch?"
+   },
+   "5": {
+    "e": "Sitemap als Mind-Map",
+    "l": "Informationsarchitektur: Einstiege, Seitentypen, Taxonomien, Schweiz",
+    "s": "Mehrere Einstiege, eine kanonische Seite je Inhalt. Die Schweiz als Länderverzeichnis.",
+    "k": "Umfasst die Sitemap medavis.de und medavis.com samt Schweiz, und wer gibt sie frei?"
+   },
+   "6": {
+    "e": "Concept Cards je Seitentyp",
+    "l": "Seitentypen mit Wireframes, SEO- und GEO-Konzept",
+    "s": "SEO und GEO sind Teil von Struktur und Content: Auszeichnung, Themenarchitektur, Weiterleitungen.",
+    "k": "Wie tief soll das SEO- und GEO-Konzept gehen, und wer ist bei Ihnen dafür zuständig?"
+   },
+   "7": {
+    "e": "Freigegebenes Mood Design",
+    "l": "Mood Design auf Basis des medavis-CI, Design-Tokens",
+    "s": "Design-Tokens je Marke als Grundlage für alle weiteren Auftritte.",
+    "k": "Wann erhalten wir die CI-Unterlagen, und wer gibt das Mood Design frei?"
+   },
+   "8": {
+    "e": "Klickbarer Prototyp",
+    "l": "Screendesign aller Seitentypen, barrierefrei",
+    "s": "Barrierefreiheit nach WCAG 2.1 AA ist im Design von Anfang an berücksichtigt.",
+    "k": "Welche Seitentypen zählen für den ersten GoLive?"
+   },
+   "9": {
+    "e": "Staging bereit",
+    "l": "Repository, Pipelines und Staging-Umgebung medavis",
+    "s": "Je Auftritt Staging und Produktiv, jede Änderung geht über Staging live.",
+    "k": "Wer bei Ihnen bekommt Zugang zum Staging?"
+   }
+  }
+ },
+ "kompakt": {
+  "fragen": [
+   [
+    "Umfang der Ergebnisse",
+    [
+     "Bestandsliste der neun Auftritte",
+     "Rollen und Sprachen",
+     "die rund 400 Backend-Seiten",
+     "Sitemap inklusive Schweiz",
+     "Domain .de oder .com, Namen der Bereiche",
+     "Tiefe des SEO- und GEO-Konzepts",
+     "Seitentypen für den ersten GoLive"
+    ]
+   ]
+  ],
+  "meilensteine": [
+   {
+    "m": "Kick-off und Bestandsaufnahme",
+    "a": "November",
+    "e": "Zielbild, Bestandsliste der neun Auftritte, Konsolidierungsliste medavis",
+    "w": "–"
+   },
+   {
+    "m": "Konzepte",
+    "a": "November bis Dezember",
+    "e": "Architektur-, Sicherheits-, Rollen- und Sprachkonzept, Sitemap und Concept Cards medavis, Mood Design",
+    "w": "Übergabe Konzept und Mood Design am 11.12."
+   },
+   {
+    "m": "Abnahme der Konzeption",
+    "a": "Mitte Dezember",
+    "e": "Technische Blaupause für das Fundament, Staging bereit",
+    "w": "Freigabe Geschäftsführung in KW 51"
+   },
+   {
+    "m": "Screendesign und Prototyp",
+    "a": "Dezember bis Januar",
+    "e": "Klickbarer Prototyp aller Seitentypen",
+    "w": "Freigabe in KW 3 2027"
+   }
+  ],
+  "weg": {
+   "titel": "Unser Weg zur Roadmap",
+   "sub": "Aus euren Rückmeldungen entsteht im nächsten Schritt die Roadmap.",
+   "schritte": [
+    {
+     "t": "Workshop-Ergebnisse",
+     "h": "per Mail an euch",
+     "s": "erledigt"
+    },
+    {
+     "t": "Euer Feedback",
+     "h": "zu den Ergebnissen und offenen Themen",
+     "s": "jetzt"
+    },
+    {
+     "t": "Roadmap",
+     "h": "Meilensteine und Termine je Ergebnis",
+     "s": "Ziel"
+    }
+   ]
+  },
+  "hinweis": "Arbeitsstand zur Übersicht, noch keine verbindliche Planung."
+ },
+ "liste_synava": "1201260000004980",
+ "schutz_hashes": [
+  "0a5d17d3b19f82f8340d3977609aa9e86b4ad8b9bd71bd9eced9271f1d5b2e4a",
+  "1f7d8737f70b022f518d7181ec439a24f09ca41df0b9a0cfc8b2622da537a10e",
+  "3c6efb268bde2923e4f7cbc086995f6158a606e66df45e307829e6b28f7aaf0e",
+  "3df948067000799fbd0eac5687df571f86f18d38d8c9e146ba3af128f8e3ec04",
+  "449e7c4ff29002ee7d7481d9fb9fddfb2ae374501f96d8675b8d18feee414f19",
+  "6428a8fbbb0e120528bb604a66787102280e1b5e26db76633ce37c8a4526e445",
+  "a6761ccff1191f3ee53acada4f7965241538511ef6eb52d37974507ab5a9023e",
+  "b4ad95e3decba61fb2f13bdd7f360fff7ce009e833eece72ba4587c59812cee6",
+  "d38681074467c0bc147b17a9a12b9efa8cc10bcf545f5b0bccccf5a93c4a2b79",
+  "e4ee06d13f52021bfbfc793ebce404608a0efd7786e1accad9d113d099fbab48",
+  "e5866344242e3d9726a5e688395d7787701f9b33b8d5408ad5d66de378e29917"
+ ]
+}
